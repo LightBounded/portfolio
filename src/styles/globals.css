@@ -4,6 +4,6 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gray-900 text-white;
+  @apply bg-gray-900 text-blue-200 antialiased;
   font-family: "JetBrains Mono", sans-serif;
 }
