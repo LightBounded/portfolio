@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
@@ -18,15 +19,16 @@ const Home: NextPage = () => {
           I&apos;m a Full-Stack Web Developer.
         </div>
         <div className="flex flex-wrap gap-4">
-          <a
-            href="#projects"
-            className="border border-blue-200 bg-blue-200 px-6 py-3 font-bold text-gray-900 transition hover:bg-gray-900 hover:text-blue-200 whitespace-nowrap"
-          >
-            Check Out My Projects
-          </a>
-          <button className="border border-blue-200 px-6 py-3 font-bold transition hover:bg-blue-200 hover:text-gray-900">
-            View My Resume
-          </button>
+          <Link href="#projects">
+            <a className="whitespace-nowrap border border-blue-200 bg-blue-200 px-6 py-3 font-bold text-gray-900 transition hover:bg-gray-900 hover:text-blue-200">
+              Check Out My Projects
+            </a>
+          </Link>
+          <Link href="resume.pdf">
+            <a className="border border-blue-200 px-6 py-3 font-bold transition hover:bg-blue-200 hover:text-gray-900">
+              View My Resume
+            </a>
+          </Link>
         </div>
       </div>
       <div className="mb-24 px-8">
@@ -64,7 +66,8 @@ const Home: NextPage = () => {
           <li className="flex cursor-pointer flex-col bg-gray-800 p-7 transition-transform hover:-translate-y-2">
             <div className="mb-4 text-lg font-bold">Astra</div>
             <p className="mb-6 text-sm">
-              A simple chat app built with Firebase where users must log in with Google to access an online chatroom
+              A simple chat app built with Firebase where users must log in with
+              Google to access an online chatroom
             </p>
             <ul className="mt-auto flex flex-wrap gap-x-5 gap-y-1.5 text-xs">
               <li>React</li>
@@ -77,8 +80,8 @@ const Home: NextPage = () => {
               Book Store Management Site
             </div>
             <p className="mb-6 text-sm">
-              A single page web app that utilizes an Express REST api to handle CRUD
-              operations and file uploads
+              A single page web app that utilizes an Express REST api to handle
+              CRUD operations and file uploads
             </p>
             <ul className="mt-auto flex flex-wrap gap-x-5 gap-y-1.5 text-xs">
               <li>Vue</li>
@@ -90,8 +93,8 @@ const Home: NextPage = () => {
           <li className="flex cursor-pointer flex-col bg-gray-800 p-7 transition-transform hover:-translate-y-2">
             <div className="mb-4 text-lg font-bold">Billing System</div>
             <p className="mb-6 text-sm">
-              A windows desktop app where users must log in to manage
-              orders, products, customers, and other users
+              A windows desktop app where users must log in to manage orders,
+              products, customers, and other users
             </p>
             <ul className="mt-auto flex flex-wrap gap-x-5 gap-y-1.5 text-xs">
               <li>Windows Forms</li>
@@ -139,17 +142,21 @@ const Home: NextPage = () => {
           </li>
         </ul>
       </div>
-      <div className="mx-auto mb-24 max-w-2xl flex-col px-8">
-        <div className="mb-8 pt-24 text-center text-5xl font-bold">Contact</div>
+      <div className="mx-auto mb-48 max-w-2xl flex-col px-8">
+        <div id="contact" className="mb-8 pt-24 text-center text-5xl font-bold">
+          Contact
+        </div>
         <p className="mb-12 text-center">
           I&apos;m always seeking for new ways to learn and grow as a developer,
           and the best way to get a hold of me is through my inbox. Whether you
           have a question or just want to stop by and say hello, I&apos;ll do my
           best to get back to you.
         </p>
-        <button className="mx-auto block border border-blue-200 px-6 py-3 font-bold transition hover:bg-blue-200 hover:text-gray-900">
-          Say Hi
-        </button>
+        <Link href="mailto:calebrossr@gmail.com">
+          <a className="mx-auto block w-max border border-blue-200 px-6 py-3 font-bold transition hover:bg-blue-200 hover:text-gray-900">
+            Say Hi
+          </a>
+        </Link>
       </div>
     </div>
   );
