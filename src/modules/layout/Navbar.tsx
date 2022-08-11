@@ -1,12 +1,17 @@
-import { useCallback, useEffect, useState } from "react";
-import { GitHub, Linkedin, Menu } from "react-feather";
+import Link from "next/link";
+import { Fragment, useCallback, useEffect, useState } from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { Transition, Dialog } from "@headlessui/react";
+import MobileSidebar from "./MobileSidebar";
+import MenuIcon from "./MenuIcon";
 
 const Navbar = () => {
-  const [show, setShow] = useState(false);
+  const [showNav, setShowNav] = useState(false);
   const [scrollY, setScrollY] = useState(0);
+  const [showMobileNav, setShowMobileNav] = useState(false);
 
   const handleScroll = useCallback(() => {
-    window.scrollY - scrollY > 0 ? setShow(false) : setShow(true);
+    window.scrollY - scrollY > 0 ? setShowNav(false) : setShowNav(true);
     setScrollY(window.scrollY);
   }, [scrollY]);
 
@@ -18,34 +23,54 @@ const Navbar = () => {
   }, [handleScroll]);
 
   return (
-    <nav
-      className={`fixed flex w-full items-center justify-between px-8 backdrop-blur transition-all ease-in-out
+    <>
+      <nav
+        className={`fixed flex w-full items-center overflow-hidden px-8 transition-all ease-in-out
         ${
-          show && scrollY != 0
-            ? "h-16 shadow-md"
-            : `${scrollY == 0 ? "h-24 shadow-none" : "h-0 shadow-none"}`
-        } overflow-hidden`}
-    >
-      <div className="text-2xl">Caleb Rivera</div>
-      <ul className="hidden items-center gap-8 md:flex">
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
-        <li>Contact</li>
-        <li>
-          <GitHub height={20} />
-        </li>
-        <li>
-          <Linkedin height={20} />
-        </li>
-      </ul>
-      <button className="md:hidden">
-        <Menu />
-      </button>
-    </nav>
+          showNav && scrollY != 0
+            ? "h-16 shadow-md backdrop-blur"
+            : `${
+                scrollY == 0
+                  ? "h-24 shadow-none backdrop-blur-0"
+                  : "h-0 shadow-none backdrop-blur"
+              }`
+        }`}
+      >
+        <div className="flex-1 text-2xl font-bold">Caleb Rivera</div>
+        <ul className="hidden items-center md:flex">
+          <li className="px-4">
+            <a href="#about">About</a>
+          </li>
+          <li className="px-4">
+            <a href="#projects">Projects</a>
+          </li>
+          <li className="mr-4 px-4">
+            <a href="#contact">Contact</a>
+          </li>
+          <li className="px-2">
+            <Link href="https://github.com/LightBounded">
+              <a target="_blank">
+                <FaGithub className="text-xl" />
+              </a>
+            </Link>
+          </li>
+          <li className="px-2">
+            <Link href="https://www.linkedin.com/in/caleb-rivera-405658234/">
+              <a target="_blank">
+                <FaLinkedin className="text-xl" />
+              </a>
+            </Link>
+          </li>
+        </ul>
+        <button className="md:hidden" onClick={() => setShowMobileNav(true)}>
+          <MenuIcon />
+        </button>
+      </nav>
+      <MobileSidebar
+        show={showMobileNav}
+        close={() => setShowMobileNav(false)}
+      />
+    </>
   );
 };
 
