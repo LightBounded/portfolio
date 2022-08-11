@@ -63,82 +63,109 @@ const Home: NextPage = () => {
           Projects
         </div>
         <ul className="grid auto-rows-fr grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-          <li className="flex cursor-pointer flex-col bg-gray-800 p-7 transition-transform hover:-translate-y-2">
-            <div className="mb-4 text-lg font-bold">Astra</div>
-            <p className="mb-6 text-sm">
-              A simple chat app built with Firebase where users must log in with
-              Google to access an online chatroom
-            </p>
-            <ul className="mt-auto flex flex-wrap gap-x-5 gap-y-1.5 text-xs">
-              <li>React</li>
-              <li>Firebase</li>
-              <li>TailwindCSS</li>
-            </ul>
+          <li className="flex flex-col bg-gray-800 p-7 transition-transform hover:-translate-y-2">
+            <Link href="https://github.com/LightBounded/astra">
+              <a target="_blank">
+                <div className="mb-4 text-lg font-bold">Astra</div>
+                <p className="mb-6 text-sm">
+                  A simple chat app built with Firebase where users must log in
+                  with Google to access an online chatroom
+                </p>
+                <ul className="mt-auto flex flex-wrap gap-x-5 gap-y-1.5 text-xs">
+                  <li>React</li>
+                  <li>Firebase</li>
+                  <li>TailwindCSS</li>
+                </ul>
+              </a>
+            </Link>
           </li>
-          <li className="flex cursor-pointer flex-col bg-gray-800 p-7 transition-transform hover:-translate-y-2">
-            <div className="mb-4 text-lg font-bold">
-              Book Store Management Site
-            </div>
-            <p className="mb-6 text-sm">
-              A single page web app that utilizes an Express REST api to handle
-              CRUD operations and file uploads
-            </p>
-            <ul className="mt-auto flex flex-wrap gap-x-5 gap-y-1.5 text-xs">
-              <li>Vue</li>
-              <li>Express</li>
-              <li>MySQL</li>
-              <li>TailwindCSS</li>
-            </ul>
+          <li className="flex flex-col bg-gray-800 p-7 transition-transform hover:-translate-y-2">
+            <Link href="https://github.com/LightBounded/vue-book-store-management-site">
+              <a target="_blank">
+                <div className="mb-4 text-lg font-bold">
+                  Book Store Management Site
+                </div>
+                <p className="mb-6 text-sm">
+                  A single page web app that utilizes an Express REST api to
+                  handle CRUD operations and file uploads
+                </p>
+                <ul className="mt-auto flex flex-wrap gap-x-5 gap-y-1.5 text-xs">
+                  <li>Vue</li>
+                  <li>Express</li>
+                  <li>MySQL</li>
+                  <li>TailwindCSS</li>
+                </ul>
+              </a>
+            </Link>
           </li>
-          <li className="flex cursor-pointer flex-col bg-gray-800 p-7 transition-transform hover:-translate-y-2">
-            <div className="mb-4 text-lg font-bold">Billing System</div>
-            <p className="mb-6 text-sm">
-              A windows desktop app where users must log in to manage orders,
-              products, customers, and other users
-            </p>
-            <ul className="mt-auto flex flex-wrap gap-x-5 gap-y-1.5 text-xs">
-              <li>Windows Forms</li>
-              <li>C#</li>
-              <li>.NET</li>
-              <li>MySQL</li>
-            </ul>
+          <li className="flex flex-col bg-gray-800 p-7 transition-transform hover:-translate-y-2">
+            <Link href="https://github.com/LightBounded/windows-forms-billing-system">
+              <a target="_blank">
+                <div className="mb-4 text-lg font-bold">Billing System</div>
+                <p className="mb-6 text-sm">
+                  A windows desktop app where users must log in to manage
+                  orders, products, customers, and other users
+                </p>
+                <ul className="mt-auto flex flex-wrap gap-x-5 gap-y-1.5 text-xs">
+                  <li>Windows Forms</li>
+                  <li>C#</li>
+                  <li>.NET</li>
+                  <li>MySQL</li>
+                </ul>
+              </a>
+            </Link>
           </li>
-          <li className="flex cursor-pointer flex-col bg-gray-800 p-7 transition-transform hover:-translate-y-2">
-            <div className="mb-4 text-lg font-bold">Clinic Management Site</div>
-            <p className="mb-6 text-sm">
-              A CRUD app where users can manage patients, doctors, appointments,
-              and other users.
-            </p>
-            <ul className="mt-auto flex flex-wrap gap-x-5 gap-y-1.5 text-xs">
-              <li>SvelteKit</li>
-              <li>MongoDB</li>
-              <li>TailwindCSS</li>
-            </ul>
+          <li className="flex flex-col bg-gray-800 p-7 transition-transform hover:-translate-y-2">
+            <Link href="https://github.com/LightBounded/sveltekit-clinic-management-site">
+              <a target="_blank">
+                <div className="mb-4 text-lg font-bold">
+                  Clinic Management Site
+                </div>
+                <p className="mb-6 text-sm">
+                  A CRUD app where users can manage patients, doctors,
+                  appointments, and other users.
+                </p>
+                <ul className="mt-auto flex flex-wrap gap-x-5 gap-y-1.5 text-xs">
+                  <li>SvelteKit</li>
+                  <li>MongoDB</li>
+                  <li>TailwindCSS</li>
+                </ul>
+              </a>
+            </Link>
           </li>
-          <li className="flex cursor-pointer flex-col bg-gray-800 p-7 transition-transform hover:-translate-y-2">
-            <div className="mb-4 text-lg font-bold">E-Commerce Site</div>
-            <p className="mb-6 text-sm">
-              An online shopping site where users can purchase art
-            </p>
-            <ul className="mt-auto flex flex-wrap gap-x-5 gap-y-1.5 text-xs">
-              <li>HTML</li>
-              <li>Bootstrap</li>
-              <li>jQuery</li>
-            </ul>
+          <li className="flex flex-col bg-gray-800 p-7 transition-transform hover:-translate-y-2">
+            <Link href="https://github.com/LightBounded/vanilla-ecommerce-site">
+              <a target="_blank">
+                <div className="mb-4 text-lg font-bold">E-Commerce Site</div>
+                <p className="mb-6 text-sm">
+                  An online shopping site where users can purchase art
+                </p>
+                <ul className="mt-auto flex flex-wrap gap-x-5 gap-y-1.5 text-xs">
+                  <li>HTML</li>
+                  <li>Bootstrap</li>
+                  <li>jQuery</li>
+                </ul>
+              </a>
+            </Link>
           </li>
-          <li className="flex cursor-pointer flex-col bg-gray-800 p-7 transition-transform hover:-translate-y-2">
-            <div className="mb-4 text-lg font-bold">
-              Computer Store Management Site
-            </div>
-            <p className="mb-6 text-sm">
-              A CRUD app integrated with Supabase to manage various aspects of a
-              computer store, including orders, customers, and employees.
-            </p>
-            <ul className="mt-auto flex flex-wrap gap-x-5 gap-y-1.5 text-xs">
-              <li>Vue</li>
-              <li>Supabase</li>
-              <li>TailwindCSS</li>
-            </ul>
+          <li className="flex flex-col bg-gray-800 p-7 transition-transform hover:-translate-y-2">
+            <Link href="https://github.com/LightBounded/vue-computer-store-site">
+              <a target="_blank">
+                <div className="mb-4 text-lg font-bold">
+                  Computer Store Management Site
+                </div>
+                <p className="mb-6 text-sm">
+                  A CRUD app integrated with Supabase to manage various aspects
+                  of a computer store, including orders, customers, and
+                  employees.
+                </p>
+                <ul className="mt-auto flex flex-wrap gap-x-5 gap-y-1.5 text-xs">
+                  <li>Vue</li>
+                  <li>Supabase</li>
+                  <li>TailwindCSS</li>
+                </ul>
+              </a>
+            </Link>
           </li>
         </ul>
       </div>
