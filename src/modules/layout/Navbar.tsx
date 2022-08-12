@@ -1,9 +1,8 @@
 import Link from "next/link";
-import { Fragment, useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { Transition, Dialog } from "@headlessui/react";
-import MobileSidebar from "./MobileSidebar";
 import MenuIcon from "./MenuIcon";
+import MobileSidebar from "./MobileSidebar";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
