@@ -61,7 +61,7 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <button className="md:hidden" onClick={() => setShowMobileNav(true)}>
+        <button className="md:hidden" aria-label="open sidebar" onClick={() => setShowMobileNav(true)}>
           <MenuIcon />
         </button>
       </nav>
