@@ -7,19 +7,22 @@ const Home: NextPage = () => {
     <div className="mx-auto max-w-screen-lg">
       <Head>
         <title>Caleb Rivera</title>
+        <meta name="title" content="Caleb Rivera" />
         <meta
           name="description"
           content="UCF computer science student and full-stack web developer"
         />
+
         <meta name="theme-color" content="#111827" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://calebrivera.dev/" />
         <meta property="og:title" content="Caleb Rivera" />
         <meta
           property="og:description"
           content="UCF computer science student and full-stack web developer"
         />
         <meta property="og:image" content="https://calebrivera.dev/og.png" />
-        <meta property="og:url" content="https://calebrivera.dev/" />
-        <meta property="og:type" content="website" />
+
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -55,8 +58,8 @@ const Home: NextPage = () => {
           </p>
           <p className="mb-4">
             I began my web development journey in 2020 during my junior year of
-            high school, where I enrolled at a vocational college to study
-            Database Application Development and Programming. Since then,
+            high school, where I enrolled at Lorenzo Walker Technical College to
+            study Database Application Development and Programming. Since then,
             I&apos;ve developed a great passion for building web applications
             using the latest tech.
           </p>
