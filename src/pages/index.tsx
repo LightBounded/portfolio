@@ -9,10 +9,18 @@ const Home: NextPage = () => {
         <title>Caleb Rivera</title>
         <meta
           name="description"
-          content="UCF computer science student and web developer"
+          content="UCF computer science student and full-stack web developer"
         />
         <meta name="theme-color" content="#111827" />
-        <meta name="image" content="/og.png" />
+        <meta property="og:title" content="Caleb Rivera" />
+        <meta
+          property="og:description"
+          content="UCF computer science student and full-stack web developer"
+        />
+        <meta property="og:image" content="https://calebrivera.dev/og.png" />
+        <meta property="og:url" content="https://calebrivera.dev/" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex h-screen flex-col justify-center px-8">
