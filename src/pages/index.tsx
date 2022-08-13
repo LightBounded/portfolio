@@ -11,6 +11,8 @@ const Home: NextPage = () => {
           name="description"
           content="UCF computer science student and web developer"
         />
+        <meta name="theme-color" content="#111827" />
+        <meta name="image" content="/og.png" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex h-screen flex-col justify-center px-8">
