@@ -22,9 +22,7 @@ const Home: NextPage = () => {
           content="UCF computer science student and full-stack web developer"
         />
         <meta property="og:image" content="https://calebrivera.dev/og.png" />
-
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex h-screen flex-col justify-center px-8">
         <div className="mb-5 text-base">Hi. My name is</div>
