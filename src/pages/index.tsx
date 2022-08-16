@@ -123,7 +123,7 @@ const Home: NextPage = () => {
                 <ul className="mt-auto flex flex-wrap gap-x-5 gap-y-1.5 text-xs">
                   <li>Windows Forms</li>
                   <li>C#</li>
-                  <li>.NET</li>
+                  <li>.NET Framework</li>
                   <li>MySQL</li>
                 </ul>
               </a>
