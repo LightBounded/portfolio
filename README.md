@@ -1,6 +1,6 @@
 # calebrivera.dev
 
-My personal site [calebrivera.dev](https://calebrivera.dev) built with and [Next.js](https://nextjs.org) and hosted with [Vercel](https://vercel.com/)
+My portfolio site [calebrivera.dev](https://calebrivera.dev) built with and [Next.js](https://nextjs.org) and hosted with [Vercel](https://vercel.com/)
 
 ## Get Started
 
