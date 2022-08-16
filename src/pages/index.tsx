@@ -88,7 +88,7 @@ const Home: NextPage = () => {
                 <ul className="mt-auto flex flex-wrap gap-x-5 gap-y-1.5 text-xs">
                   <li>React</li>
                   <li>Firebase</li>
-                  <li>TailwindCSS</li>
+                  <li>Tailwind CSS</li>
                 </ul>
               </a>
             </Link>
@@ -107,7 +107,7 @@ const Home: NextPage = () => {
                   <li>Vue</li>
                   <li>Express</li>
                   <li>MySQL</li>
-                  <li>TailwindCSS</li>
+                  <li>Tailwind CSS</li>
                 </ul>
               </a>
             </Link>
@@ -142,7 +142,7 @@ const Home: NextPage = () => {
                 <ul className="mt-auto flex flex-wrap gap-x-5 gap-y-1.5 text-xs">
                   <li>SvelteKit</li>
                   <li>MongoDB</li>
-                  <li>TailwindCSS</li>
+                  <li>Tailwind CSS</li>
                 </ul>
               </a>
             </Link>
@@ -176,7 +176,7 @@ const Home: NextPage = () => {
                 <ul className="mt-auto flex flex-wrap gap-x-5 gap-y-1.5 text-xs">
                   <li>Vue</li>
                   <li>Supabase</li>
-                  <li>TailwindCSS</li>
+                  <li>Tailwind CSS</li>
                 </ul>
               </a>
             </Link>
