@@ -62,14 +62,21 @@ const Home: NextPage = () => {
             using the latest tech.
           </p>
           <p className="mb-4">Here are some I&apos;ve been working with:</p>
-          <ul className="grid grid-cols-2 whitespace-nowrap">
+          <ul className="mb-4 grid grid-cols-2 whitespace-nowrap">
             <li className="list-inside list-disc">TypeScript</li>
             <li className="list-inside list-disc">NextJS</li>
             <li className="list-inside list-disc">tRPC</li>
             <li className="list-inside list-disc">SvelteKit</li>
             <li className="list-inside list-disc">Vue</li>
-            <li className="list-inside list-disc">Express</li>
+            <li className="list-inside list-disc">GraphQL</li>
           </ul>
+          <p>
+            Currently, I&apos;m a front-end developer and mentor at KnightHacks,
+            a software development and hackathon registered student organization
+            at UCF. I absolutely love what I do, maintaining vital tools
+            necessary to running hackathons and helping my peers build projects
+            that teach them skills that will help them better market themselves.
+          </p>
         </div>
       </div>
       <div className="mb-24 px-8">
