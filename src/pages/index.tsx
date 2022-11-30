@@ -68,7 +68,7 @@ const Home: NextPage = () => {
             <li className="list-inside list-disc">tRPC</li>
             <li className="list-inside list-disc">SvelteKit</li>
             <li className="list-inside list-disc">Vue</li>
-            <li className="list-inside list-disc">GraphQL</li>
+            <li className="list-inside list-disc">GraphQ</li>
           </ul>
           <p>
             Currently, I&apos;m a front-end developer and mentor at KnightHacks,
